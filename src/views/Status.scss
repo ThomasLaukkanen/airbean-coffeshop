@@ -1,0 +1,67 @@
+@import '../assets/colors';
+
+.statusWrapper {
+  background: $orange;
+  text-align: center;
+  min-height: 100%;
+  padding-top: 140px;
+  color: #fff;
+  h1 {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+  }
+
+  h2 {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    margin-bottom: 60px;
+    margin-top: 16px;
+  }
+  h3 {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 40px;
+  }
+  img {
+    margin-bottom: 40px;
+    animation: hover 5s alternate infinite;
+    perspective: 600px;
+    transform-style: preserve-3d;
+  }
+  button {
+    border: none;
+    border-radius: 50px;
+    width: 184px;
+    height: 55px;
+    background: #fff;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    cursor: pointer;
+  }
+}
+@keyframes hover {
+  0% {
+    transform: translateX(50px) translateY(20px) rotate3d(0, 1, 0, 6deg);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  75% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateX(-100px) rotate3d(0, 1, 0, 10deg) translateY(-20px) ro;
+  }
+}

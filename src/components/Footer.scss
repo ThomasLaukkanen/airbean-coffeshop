@@ -1,0 +1,12 @@
+footer {
+  bottom: 0px;
+  width: 100vw;
+  height: 73px;
+  img {
+    position: absolute;
+    object-fit: cover;
+    height: 73px;
+    width: 100%;
+    object-position: 50% 0%;
+  }
+}

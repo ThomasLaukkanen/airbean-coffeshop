@@ -1,0 +1,42 @@
+@import '../assets/colors';
+
+.aboutWrapper {
+  padding-top: 140px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: $pink;
+  min-height: 100vh;
+  position: relative;
+
+  .contentWrapper {
+    max-width: 611px;
+  }
+
+  h1 {
+    font-size: 42px;
+    margin-bottom: 17px;
+  }
+  p {
+    font-family: 'Work Sans';
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  .ownerWrapper {
+    margin-top: 32px;
+    text-align: center;
+    margin-bottom: 100px;
+    h3 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+    h5 {
+      font-size: 22px;
+      font-family: 'Work Sans';
+      font-weight: normal;
+    }
+  }
+}

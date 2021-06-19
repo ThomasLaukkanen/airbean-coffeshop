@@ -1,0 +1,70 @@
+@import '../assets/colors';
+
+.navFlowers {
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  height: 113px;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+.buttonMenu {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  background: none;
+  border: none;
+  z-index: 888;
+  display: block;
+}
+.buttonMenu:hover {
+  cursor: pointer;
+}
+.navWrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 600;
+  background: $brown;
+  transform: translateX(-100vw);
+  transition: transform 0.4s ease-in;
+
+  .navMain {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 32px;
+      }
+      a:hover {
+        color: $green;
+      }
+    }
+    li {
+      list-style: none;
+      text-align: center;
+      height: 45 px;
+    }
+
+    .line {
+      width: 48px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 2px;
+      margin: 32px;
+    }
+  }
+}
+
+.showNav {
+  transform: translateX(0);
+
+  transition: transform 0.35s linear;
+}

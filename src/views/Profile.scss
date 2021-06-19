@@ -1,0 +1,84 @@
+@import '../assets/colors';
+
+.profileWrapper {
+  background: $brown;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.orderWrapper {
+  margin-top: 123px;
+  color: #fff;
+  .profileInfo {
+    margin-bottom: 65px;
+    text-align: center;
+    width: 315px;
+    h2 {
+      margin-top: 16px;
+      font-size: 24px;
+      line-height: 120%;
+    }
+    h4 {
+      font-family: Work Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 120%;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  ul {
+    li {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      .totalOrderSum {
+        text-align: right;
+      }
+    }
+
+    .lineThin {
+      margin: 8px 0;
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .totalOrderSumRight {
+      text-align: right;
+    }
+  }
+  .line {
+    margin: 16px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    width: 100%;
+  }
+  .orderId {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .orderDate {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .totalOrderSum {
+    font-family: Work Sans;
+    font-size: 12px;
+  }
+  .totalSpent {
+    display: flex;
+    justify-content: space-between;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+  }
+}
