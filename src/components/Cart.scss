@@ -72,6 +72,10 @@
     margin-bottom: 32px;
     cursor: pointer;
     margin-top: 32px;
+    transition: background 0.2s ease-in;
+    &:hover {
+      background: red;
+    }
   }
   ul {
     padding: 0;

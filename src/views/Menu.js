@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setCoffee, setDiscount } from '../actions/coffeeAction'
 import dotsMenu from '../assets/dotsMenu.svg'
 import { setCart } from '../actions/coffeeAction'
+import Confetti from 'react-dom-confetti'
 
 function Menu() {
   const [show, setShow] = useState(false)
@@ -54,6 +55,20 @@ function Menu() {
     )
   }, [cart])
 
+  const config = {
+    angle: 90,
+    spread: 360,
+    startVelocity: 40,
+    elementCount: 70,
+    dragFriction: 0.12,
+    duration: 3000,
+    stagger: 3,
+    width: '10px',
+    height: '10px',
+    perspective: '500px',
+    colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a']
+  }
+
   return (
     <div className="menuWrapper">
       {show ? (
@@ -62,7 +77,6 @@ function Menu() {
           removeTotalCost={removeTotalCost}
           totalSum={totalSum}
           checkCartDiscount={checkCartDiscount}
-          k
         />
       ) : (
         ''
@@ -77,6 +91,7 @@ function Menu() {
       </button>
       {cart.length > 0 ? <div className="circle">{cart.length}</div> : ''}
       <h1>Menu</h1>
+      <Confetti active={show} config={config} />
       <ul className="menuList">
         {menu.map((item) => {
           return (
